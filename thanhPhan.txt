@@ -1,0 +1,8 @@
+- header 
+- slider
+- content 
+    + outstanding place
+    + Exclusive offer
+    + suggest
+    + User manual
+- footer

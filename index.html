@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="row">
+                <div class="brand">
+                    <img class="brand-logo" src="https://i.pinimg.com/550x/2d/dd/38/2ddd3826533554880ba70980b6ba7047.jpg" alt="">
+                </div>
+                <div class="header-section">
+                    <div class="header-section-item">
+                        <a href="#">HOME</a>
+                    </div>
+                    <div class="header-section-item">
+                        <a href="#" class = "header-section-item-package">PACKAGES
+                            <ul class = "section-item-list">
+                                <li class = "section-item-list-element section-item-list-element-package">Search 1</li>
+                                <li class = "section-item-list-element">Search 2</li>
+                                <li class = "section-item-list-element border-arrow_right">Tour Package 
+                                    <ul class="section-item-list-lv2">
+                                        <li class="section-item-list-lv2-element list-lv2-element-carousel">Carousel</li>
+                                        <li class="section-item-list-lv2-element">Custom Map</li>
+                                        <li class="section-item-list-lv2-element">360 Panorama</li>
+                                        <li class="section-item-list-lv2-element">Default</li>
+                                    </ul>
+                                </li>
+                                <li class = "section-item-list-element">Destination</li>
+                                <li class = "section-item-list-element">Typology</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="header-section-item">
+                        <a href="#">SHOP</a>
+                        <ul class="section-item-list">
+                            <li class="section-item-list-element">Archive</li>
+                            <li class="section-item-list-element">Single Product</li>
+                            <li class="section-item-list-element">Cart</li>
+                            <li class="section-item-list-element">Checkout</li>
+                        </ul>
+                    </div>
+                    <div class="header-section-item">
+                        <a href="#">ABOUT US</a>
+                        <ul class="section-item-list">
+                            <li class="section-item-list-element section-item-list-element-about_us">About Us</li>
+                            <li class="section-item-list-element">About Us 2</li>
+                            <li class="section-item-list-element">About Us 3</li>
+                        </ul>
+                    </div>
+                    <div class="header-section-item">
+                        <a href="#">PAGES</a>
+                        <ul class="section-item-list">
+                            <li class="section-item-list-element">Services</li>
+                            <li class="section-item-list-element">Agency Tours</li>
+                            <li class="section-item-list-element">Testimonials</li>
+                            <li class="section-item-list-element">Prices</li>
+                            <li class="section-item-list-element">Promotions</li>
+                            <li class="section-item-list-element">Faq</li>
+                            <li class="section-item-list-element">Comming Soon</li>
+                            <li class="section-item-list-element border-arrow_right">About Us
+                                <ul class="section-item-list-lv2">
+                                    <li class="section-item-list-lv2-element">About Us 1</li>
+                                    <li class="section-item-list-lv2-element">About Us 2</li>
+                                    <li class="section-item-list-lv2-element">About Us 3</li>
+                                </ul>
+                            </li>
+                            <li class="section-item-list-element border-arrow_right">Contact
+                                <ul class="section-item-list-lv2">
+                                    <li class="section-item-list-lv2-element">Contact 1</li>
+                                    <li class="section-item-list-lv2-element">Contact 2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-section-item">
+                        <a href="#">NEWS</a>
+                        <ul class="section-item-list">
+                            <li class = "section-item-list-element">Archive</li>
+                            <li class = "section-item-list-element border-arrow_right">Single Post
+                                <ul class="section-item-list-lv2">
+                                    <li class="section-item-list-lv2-element">Full Width</li>
+                                    <li class="section-item-list-lv2-element">Right Sidebar</li>
+                                    <li class="section-item-list-lv2-element">Left Sidebar</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-section-item">
+                        <a href="#">CONTACT</a>
+                        <ul class="section-item-list">
+                            <li class = "section-item-list-element">Contact 1</li>
+                            <li class = "section-item-list-element">Contact 2</li>
+                        </ul>
+                    </div>
+                    <button class="header-section-item header-section-btn_book" type="button">BOOK NOW</button>
+                </div>
+                <div class="sidebar_right">
+                    <i class="fas fa-bars sidebar_right-icon"></i>
+                </div>
+            </div>
+            <div class="select_destination">
+                <div class="select_destination-content">
+                    <h1>Search your next Holiday</h1>
+                    <h6>CHECK OUR BEST PROMOTIONS</h6>
+                    <div class="select_destination-form_select">
+                        <select name="select-destination" id="select-destination">
+                            <option value="0">Choose your Destination ...</option>
+                            <option value="1">Europe</option>
+                            <option value="2">- Italy</option>
+                            <option value="3">- Netherlands</option>
+                            <option value="4">Asia</option>
+                            <option value="5">- Thailandia</option>
+                            <option value="6">United States</option>
+                            <option value="7">Oceania</option>
+                        </select>
+                        <i class="fas fa-search select_destination-icon"></i>
+                    </div>
+                    <div class="featured_destination">
+                        <div class="featured_destination-item">
+                            <img class = "featured_destination-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-relax.png" alt="">
+                            <h6>relax</h6>
+                        </div>
+                        <div class="featured_destination-item">
+                            <img class = "featured_destination-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-cultural.png" alt="">
+                            <h6>cultural</h6>
+                        </div>
+                        <div class="featured_destination-item">
+                            <img class = "featured_destination-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-sport.png" alt="">
+                            <h6>sport</h6>
+                        </div>
+                        <div class="featured_destination-item">
+                            <img class = "featured_destination-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/t-history.png" alt="">
+                            <h6>history</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div class="destination">
+                <div class="destination-title">
+                    <h3>OUR PROPOSALS</h3>
+                    <h2>OUR <u>DESTINATIONS</u></h2>
+                </div>
+                <div class="destination-prominent">
+                    <div class="destination-prominent-item">
+                        <div class="destination-prominent-item-view">
+                            <img class="logo-destination" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/arch.png" alt="">
+                            <img class="destination-prominent-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/destination-9.jpg" alt="">
+                            <div class="destination-prominent-item-name">
+                                <h3>Europe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="destination-prominent-packages">
+                            <h3>Packages</h3>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Berlin</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Amsterdam</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Tuscandy</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-view">
+                                VIEW DESTINATION
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-prominent-item">
+                        <div class="destination-prominent-item-view">
+                            <img class="destination-prominent-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/destination-5-720x720.jpg" alt="">
+                            <img class="logo-destination" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/buddha.png" alt="">
+                            <div class="destination-prominent-item-name">
+                                <h3>Thailandia</h3>
+                                <h6>1 packages</h6>
+                            </div>
+                        </div>
+                        <div class="destination-prominent-packages">
+                            <h3>Packages</h3>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Phuket</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-view">
+                                VIEW DESTINATION
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-prominent-item">
+                        <div class="destination-prominent-item-view">
+                            <img class="destination-prominent-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-8.jpg" alt="">
+                            <img class="logo-destination" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/torii-gate.png" alt="">
+                            <div class="destination-prominent-item-name">
+                                <h3>Asia</h3>
+                                <h6>2 packages</h6>
+                            </div>
+                        </div>
+                        <div class="destination-prominent-packages">
+                            <h3>Packages</h3>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Hong Kong</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Phuket</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-view">
+                                VIEW DESTINATION
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-prominent-item">
+                        <div class="destination-prominent-item-view">
+                            <img class="destination-prominent-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-10.jpg" alt="">
+                            <img class="logo-destination" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/pisa.png" alt="">
+                            <div class="destination-prominent-item-name">
+                                <h3>Italy</h3>
+                                <h6>1 packages</h6>
+                            </div>
+                        </div>
+                        <div class="destination-prominent-packages">
+                            <h3>Packages</h3>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Tuscandy</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-view">
+                                VIEW DESTINATION
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-prominent-item">
+                        <div class="destination-prominent-item-view">
+                            <img class="destination-prominent-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-11.jpg" alt="">
+                            <img class="logo-destination" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/london-eye.png" alt="">
+                            <div class="destination-prominent-item-name">
+                                <h3>Netherlands</h3>
+                                <h6>1 packages</h6>
+                            </div>
+                        </div>
+                        <div class="destination-prominent-packages">
+                            <h3>Packages</h3>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>Amsterdam</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-view">
+                                VIEW DESTINATION
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-prominent-item">
+                        <div class="destination-prominent-item-view">
+                            <img class="destination-prominent-item-img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/destination-1-1-720x720.jpg" alt="">
+                            <img class="logo-destination" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/golden-gate.png" alt="">
+                            <div class="destination-prominent-item-name">
+                                <h3>United States</h3>
+                                <h6>1 packages</h6>
+                            </div>
+                        </div>
+                        <div class="destination-prominent-packages">
+                            <h3>Packages</h3>
+                            <a href="#" class="destination-prominent-packages-Specifically">
+                                <p>San Francisco</p>
+                            </a>
+                            <a href="#" class="destination-prominent-packages-view">
+                                VIEW DESTINATION
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div> 
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
