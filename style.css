@@ -46,6 +46,17 @@ html {
     margin-left: 50px;
 }
 
+
+.header-section-item {
+    display: inline-block;
+    position: relative;
+    padding : 0 15px;
+    margin: 0 8px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
 .header-section-item a {
     line-height: 64px;
     font-size: 14px;
@@ -55,16 +66,6 @@ html {
 .header-section-item a:hover {
     text-decoration: none;
     color:#fff;
-}
-
-
-.header-section-item {
-    display: inline-block;
-    position: relative;
-    padding : 0 15px;
-    margin: 0 8px;
-    cursor: pointer;
-    letter-spacing: 2px;
 }
 
 .header-section-item:hover .section-item-list{
@@ -229,6 +230,23 @@ html {
     color: #fff;
 }
 
+.select_destination-content u{
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.select_destination-content u::after{
+    content: "";
+    background: #ba71da;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 4px;
+    z-index: -1;
+}
+
 .select_destination-content h6{
     font-size: 20px;
     line-height: 20px;
@@ -319,10 +337,10 @@ html {
     bottom: -5px;
 }
 
-/* =========================================== CONTENT ======================================== */
+/* ================================================================ CONTENT ================================================== */
 
 #content {
-    display: flex;
+    display: block;
 }
 
 .destination {
@@ -388,9 +406,10 @@ html {
     overflow: hidden;
 }
 
-/* .destination-prominent-item-view:hover {
-    animation: disappear 0.8s ease-in forwards;
-} */
+.destination-prominent-item-view {
+    z-index: 1;
+}
+
 
 .destination-prominent-item-img{
     width: 100%;
@@ -445,18 +464,6 @@ html {
     display: none;
 }
 
-
-/* ======================================================= keyframes =================================================== */
-
-@keyframes disappear {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
 .destination-prominent-packages h3 {
     font-size: 20px;
     letter-spacing: 0px;
@@ -488,6 +495,314 @@ html {
     letter-spacing: 2px;
     margin-top: 18px;
 }
+
+/* ---------------------------------------------- some packages --------------------------------------------------------------------- */
+.wrap_block-destination-package_all{
+    width: 100%;
+    height: 720px;
+}
+
+.destination-package_all {
+    width: 100%;
+    height: 235px;
+    position: relative;
+    top: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-search-2.jpg?id=1538) no-repeat center / cover;
+}
+
+.detination-packages-title {
+    position: relative;
+    top: 0;
+    left: -142px;
+}
+
+.detination-packages-title h6{
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.detination-packages-title u{
+    position: relative;
+}
+
+.detination-packages-title u::after {
+    content: "";
+    display: block;
+    background: #f76570;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 5px;
+    z-index: 0;
+}
+
+.detination-packages-view {
+    max-height: 44px;
+    max-width: 370px;
+    box-sizing: border-box;
+}
+
+.detination-packages-view a {
+    position: relative;
+    left: 48px;
+    border-radius: 38px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #f76570;
+    background: #fff;
+    padding: 12px 38px;
+    box-sizing: border-box;
+}
+
+.detination-packages-view a {
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------ highlight destination ------------------------------------- */
+
+.row {
+    background: none;
+}
+
+.col-sm-3 {
+    margin-left: 115px;
+}
+
+.highlight_place {
+    background: #fff;
+    width: 100%;
+    height: 550px;
+}
+
+.highlight_place-name h3{
+    font-size: 14px;
+    color: #9a9a9a;
+    line-height: 14px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.highlight_place-name h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.highlight_place-name u{
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.highlight_place-name u::after {
+    content: "";
+    background: #14b9d5;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 6px;
+    z-index: -1;
+}
+
+.highlight_place-description p {
+    margin-top: 20px;
+    text-align: left;
+    color: #9a9a9a;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+
+.highlight_place-price h1 {
+    margin-top: 25px;
+    font-weight: normal;
+    color: #555555;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.highlight_place-book_ticket a {
+    border-radius: 38px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    background: #1bbc9b;
+    padding: 15px 36px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.highlight_place-view {
+    width: 750px;
+    height: 410px;
+    position: relative;
+}
+
+.highlight_place-slider {
+    width: 750px;
+    height: 410px;
+    position: relative;
+}
+
+.highlight_place-slider-img {
+    width: 750px;
+    height: 410px;
+    display: none;
+}
+
+.display {
+    display: block;
+    animation: display 1.5s ease forwards;
+}
+
+
+@keyframes display {
+    from {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.highlight_place-slider-img-selected {
+    position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.highlight_place-slider-img-selected-item {
+    width: 60px;
+    height: 4px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 12px;
+}
+
+.selected {
+    background: rgba(255, 255, 255, 1);
+}
+
+.highlight_place-time{
+    width: 490px;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -56px;
+}
+
+.highlight_place-time-item {
+    background: #14b9d5;
+    width: 25%;
+    height: 115px;
+    text-align: center;
+    color: #fff;
+}
+
+.highlight_place-time-item h1{
+    margin: 18px 0 6px 0;
+}
+
+.slash::after {
+    content: "/";
+    position: absolute;
+    font-size: 62px;
+    font-weight: 100;
+    color:#000;
+    line-height: 50px;
+    top: 28px;
+    margin-left: 54px;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+/* ===========================================================  some tours ==================================== */
+
+.some_tours {
+    width: 1200px;
+    height: 184px;
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.some_tours-item {
+    width: 33.33333%;
+    height: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.some_tours-item-img {
+    height: 50px;
+    width: 50px;
+}
+
+.some_tours-item-description {
+    margin-left: 20px;
+}
+
+.some_tours-item-description h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #555555;
+    margin: 0;
+}
+
+.some_tours-item-description p {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color:#9a9a9a;
+    letter-spacing: 1px;
+}
+
+.some_tours-item-description a {
+    color: #14b9d5;
+    text-decoration: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------------------------------------- place discover ------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
 
 
 
