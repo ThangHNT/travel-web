@@ -795,16 +795,59 @@ html {
 
 /* ------------------------------------------------------------- place discover ------------------------------------------------------ */
 
+.place_discover {
+    width: 100vw;
+    height: 270px;
+    display: flex;
+    margin-top: 56px;
+}
 
+.place_discover-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.discover_cities {
+    background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-5-filter.jpg?id=1584) no-repeat center / cover;
+}
 
+.discover_nature {
+    background: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-6-filter.jpg?id=1585) no-repeat center / cover;
+}
 
+.place_discover-item h3 {
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: normal;
+    position: relative;
+    top: -10px;
+}
 
+.place_discover-item h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: -8px;
+}
 
-
-
-
-
+.place_discover-item a {
+    text-decoration: none;
+    background: #fff;
+    padding: 14px 38px;
+    line-height: 14px;
+    font-size: 14px;
+    color:#1bbc9b;
+    border-radius: 38px;
+    position: relative;
+    bottom: -12px;
+}
 
 
 
