@@ -16,22 +16,22 @@ for(let i = 0; i < somePackages.length; i++){
     }
 }
 
-var sliderImg = document.querySelectorAll('.highlight_place-slider-img');
+var sliderImg = document.querySelector('.highlight_place-slider-img');
 var imgSelected = document.querySelectorAll('.highlight_place-slider-img-selected-item');
 let i = 0;
-setInterval(() => {
+setInterval(function(){
     if(i > 2) i = 0;
-    let a = sliderImg[i];
-    let b = imgSelected[i];
-    a.classList.add('display');
-    b.classList.add('selected');
-    setTimeout(() => {
-        a.classList.remove('display');
-        b.classList.remove('selected');
-    },5000);
+    var imgs = [
+        "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-3.jpg",
+        "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-4.jpg",
+        "http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-4-1.jpg"
+    ];
+    sliderImg.src = imgs[i];
+    if(i > 0) imgSelected[i-1].classList.remove('selected');
+    else imgSelected[2].classList.remove("selected");
+    imgSelected[i].classList.add('selected');
     i++;
-},5000)
-
+},4000);
 
 
 
